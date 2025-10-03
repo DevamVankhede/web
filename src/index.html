@@ -1,31 +1,385 @@
-<!DOCTYPE html>
+<!-- Figma Frame Name: Home Page -->
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting…</title>
-    <meta http-equiv="refresh" content="0; url=/homepage.html">
-    <link rel="canonical" href="/homepage.html">
-    <style>
-        body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; padding: 2rem; }
-        a { color: #2563eb; }
-    </style>
-    <script>
-        // In case meta refresh is blocked, do a JS redirect
-        (function(){
-            try { window.location.replace('/homepage.html'); } catch (_) { window.location.href = '/homepage.html'; }
-        })();
-    </script>
-    <noscript>
-        <meta http-equiv="refresh" content="0; url=/homepage.html">
-    </noscript>
-    <link rel="icon" href="/img/Logo_499-117.png">
-    <meta name="robots" content="noindex">
-    <meta name="turbo-visit-control" content="reload">
-</head>
-<body>
-    <p>Redirecting to <a href="/homepage.html">homepage</a>…</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - FitTrack</title>
+    <link href="/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-poppins bg-black text-base">
+    <header
+      id="header-placeholder"
+      class="sticky top-0 z-50 w-full bg-[#1c1f26] shadow-sm"
+    ></header>
+
+    <main>
+      <!-- START: Hero-section -->
+      <section class="relative h-screen overflow-hidden bg-black">
+        <!-- Background Image & Overlay -->
+        <div class="absolute inset-0">
+          <img
+            src="/img/Hero-image_499-108.png"
+            alt="Man lifting weights"
+            class="h-full w-full object-cover"
+          />
+        </div>
+
+        <!-- Hero Content -->
+        <div
+          class="relative z-10 mx-auto flex h-full max-w-5xl flex-col items-center justify-center px-4 text-center"
+        >
+          <h1
+            class="mb-6 text-5xl leading-tight font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-[100px] xl:text-[120px]"
+          >
+            Transform Your <span class="text-[#a6ff00]">Fitness</span> Journey
+          </h1>
+          <p
+            class="mb-10 text-lg leading-relaxed text-white md:text-xl lg:text-2xl"
+          >
+            Personalized workout plans and nutrition guides at your fingertips
+          </p>
+          <a
+            href="#"
+            class="rounded-xl bg-[#a6ff00] px-10 py-4 text-lg font-medium text-[#1c1f26] transition duration-300 hover:bg-green-600"
+          >
+            Register Now
+          </a>
+        </div>
+      </section>
+      <!-- END: Hero-section -->
+
+      <!-- START: Why Choose Us Section -->
+      <section class="bg-[#1c1f26] px-4 py-20">
+        <div class="container mx-auto text-center">
+          <h2
+            class="mb-16 text-3xl leading-tight font-bold text-white md:text-[48px]"
+          >
+            Why Choose Our Service!
+          </h2>
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-3">
+            <!-- Benefit 1 -->
+            <div class="flex flex-col items-center">
+              <div class="mb-6 rounded-xl bg-[#38432a] p-4">
+                <i class="fa-solid fa-shoe-prints text-4xl text-white"></i>
+              </div>
+              <h3 class="mb-4 text-xl font-semibold text-white md:text-2xl">
+                Wide Range of Fitness Program
+              </h3>
+              <p
+                class="font-poppins text-center text-base leading-6 text-gray-400"
+              >
+                Our timetable offers a wide range of low to high intensity
+                fitness programmes to suit your fitness lifestyle.
+              </p>
+            </div>
+            <!-- Benefit 2 -->
+            <div class="flex flex-col items-center">
+              <div class="mb-6 rounded-xl bg-[#38432a] p-4">
+                <i class="fa-solid fa-clipboard-list text-4xl text-white"></i>
+              </div>
+              <h3 class="mb-4 text-xl font-semibold text-white md:text-2xl">
+                Expert guidance
+              </h3>
+              <p
+                class="font-poppins text-center text-base leading-6 text-gray-400"
+              >
+                Our timetable offers a wide range of low to high intensity
+                fitness programmes to suit your fitness lifestyle.
+              </p>
+            </div>
+            <!-- Benefit 3 -->
+            <div class="flex flex-col items-center">
+              <div class="mb-6 rounded-xl bg-[#38432a] p-4">
+                <i class="fa-solid fa-dumbbell text-4xl text-white"></i>
+              </div>
+              <h3 class="mb-4 text-xl font-semibold text-white md:text-2xl">
+                Quality Fitness equipment
+              </h3>
+              <p
+                class="font-poppins text-center text-base leading-6 text-gray-400"
+              >
+                Our timetable offers a wide range of low to high intensity
+                fitness programmes to suit your fitness lifestyle.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Why Choose Us Section -->
+
+      <!-- START: Latest News Section -->
+      <section class="bg-[#1c1f26] px-4 py-20">
+        <div class="container mx-auto text-center">
+          <h2
+            class="font-poppins mb-16 text-3xl leading-tight font-bold text-white md:text-[48px]"
+          >
+            Latest News, Events & updates
+          </h2>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- News Item 1 -->
+            <div class="overflow-hidden rounded-lg bg-[#1c1f26]">
+              <img
+                src="/img/News_Item_Image_499-151.png"
+                alt="Woman doing spinning"
+                class="mb-6 w-full rounded-t-lg object-cover"
+              />
+              <div class="px-8 pb-8">
+                <h3
+                  class="font-poppins mb-3 text-left text-xl font-semibold text-white md:text-2xl"
+                >
+                  Spinning
+                </h3>
+                <p
+                  class="font-poppins text-left text-base leading-6 text-gray-400"
+                >
+                  Our timetable offers a wide range of low to high intensity
+                  fitness programmes to suit your fitness lifestyle.
+                </p>
+              </div>
+            </div>
+            <!-- News Item 2 -->
+            <div class="overflow-hidden rounded-lg bg-[#1c1f26]">
+              <img
+                src="/img/News_Item_Image_499-156.png"
+                alt="Kids playing games"
+                class="mb-6 w-full rounded-t-lg object-cover"
+              />
+              <div class="px-8 pb-8">
+                <h3
+                  class="font-poppins mb-3 text-left text-xl font-semibold text-white md:text-2xl"
+                >
+                  Fitness Games
+                </h3>
+                <p
+                  class="font-poppins text-left text-base leading-6 text-gray-400"
+                >
+                  Our timetable offers a wide range of low to high intensity
+                  fitness programmes to suit your fitness lifestyle.
+                </p>
+              </div>
+            </div>
+            <!-- News Item 3 -->
+            <div class="overflow-hidden rounded-lg bg-[#1c1f26]">
+              <img
+                src="/img/News_Item_Image_499-161.png"
+                alt="Woman doing yoga"
+                class="mb-6 w-full rounded-t-lg object-cover"
+              />
+              <div class="px-8 pb-8">
+                <h3
+                  class="font-poppins mb-3 text-left text-xl font-semibold text-white md:text-2xl"
+                >
+                  Yoga Aerobic
+                </h3>
+                <p
+                  class="font-poppins text-left text-base leading-6 text-gray-400"
+                >
+                  Our timetable offers a wide range of low to high intensity
+                  fitness programmes to suit your fitness lifestyle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Latest News Section -->
+
+      <!-- START: CTA -->
+      <section
+        class="relative bg-cover bg-center py-24 md:py-40 lg:py-48"
+        style="background-image: url(&quot;/img/cta-bg-img_499-166.png&quot;)"
+      >
+        <div class="relative z-10 container mx-auto flex justify-center">
+          <div
+            class="w-full max-w-full rounded-lg bg-[#a6ff00] px-8 py-16 text-center sm:max-w-xl md:max-w-3xl md:px-12 md:py-24 lg:px-16"
+          >
+            <h2
+              class="mb-8 text-3xl leading-snug font-extrabold text-black sm:text-4xl md:text-[48px]"
+            >
+              Fitness training this Summer
+            </h2>
+            <p
+              class="mb-12 text-2xl font-bold text-[#ff0000] sm:text-3xl md:text-4xl"
+            >
+              Get 15% Discount
+            </p>
+            <button
+              class="rounded-xl bg-[#1c1f26] px-10 py-4 text-xl font-semibold text-white transition duration-300 hover:bg-gray-800"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- END: CTA -->
+
+      <!-- START: Past Reviews Section -->
+      <section class="bg-[#1A1C20] px-4 py-20">
+        <div class="container mx-auto text-center">
+          <h2
+            class="mb-16 text-3xl leading-tight font-bold text-white md:text-[48px]"
+          >
+            Past Reviews
+          </h2>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- Review 1 -->
+            <div class="rounded-lg bg-[#1c1f26] p-6">
+              <div class="mb-4 flex justify-center text-xl">
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-regular fa-star text-gray-400"></i>
+              </div>
+              <p
+                class="font-poppins mb-6 text-center text-base leading-6 text-gray-400"
+              >
+                Our timetable offers a wide range of low to high intensity
+                fitness programmes to suit your fitness lifestyle.
+              </p>
+              <div class="flex items-center justify-center space-x-4">
+                <img
+                  src="/img/Reviewer_Image_499-180.png"
+                  alt="Reviewer Kim June"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <span class="text-lg font-medium text-white">Kim June</span>
+              </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="rounded-lg bg-[#1c1f26] p-6">
+              <div class="mb-4 flex justify-center text-xl">
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+              </div>
+              <p
+                class="font-poppins mb-6 text-center text-base leading-6 text-gray-400"
+              >
+                Our timetable offers a wide range of low to high intensity
+                fitness programmes to suit your fitness lifestyle.
+              </p>
+              <div class="flex items-center justify-center space-x-4">
+                <img
+                  src="/img/Reviewer_Image_499-187.png"
+                  alt="Reviewer Assuyuti"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <span class="text-lg font-medium text-white">Assuyuti</span>
+              </div>
+            </div>
+            <!-- Review 3 -->
+            <div class="rounded-lg bg-[#1c1f26] p-6">
+              <div class="mb-4 flex justify-center text-xl">
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+                <i class="fa-solid fa-star text-[#ffc300]"></i>
+              </div>
+              <p
+                class="font-poppins mb-6 text-center text-base leading-6 text-gray-400"
+              >
+                Our timetable offers a wide range of low to high intensity
+                fitness programmes to suit your fitness lifestyle.
+              </p>
+              <div class="flex items-center justify-center space-x-4">
+                <img
+                  src="/img/Reviewer_Image_499-194.png"
+                  alt="Reviewer Baskey Koer"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <span class="text-lg font-medium text-white">Baskey Koer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END: Past Reviews Section -->
+
+      <!-- START: Contact Us Section -->
+      <section class="bg-[#a6ff00] px-4 py-20">
+        <div
+          class="container mx-auto grid grid-cols-1 items-center gap-12 md:grid-cols-2"
+        >
+          <!-- Left Image Side -->
+          <div class="flex justify-center md:justify-start">
+            <img
+              src="/img/Pexels_Photo_by_Zakaria_Boumliha_499-198.png"
+              alt="Man training"
+              class="h-auto w-full object-cover"
+            />
+          </div>
+
+          <!-- Right Contact Form Side -->
+          <div
+            class="mx-auto w-full max-w-lg rounded-2xl bg-[#EBEBEB] p-12 shadow-2xl md:mx-0"
+          >
+            <h2
+              class="mb-10 text-center text-3xl font-semibold text-black md:text-[32px]"
+            >
+              Contact Us
+            </h2>
+            <form class="space-y-6">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="focus:ring-opacity-50 w-full rounded-lg bg-white p-4 text-black placeholder-gray-500 focus:ring-2 focus:ring-[#a6ff00] focus:outline-none"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="focus:ring-opacity-50 w-full rounded-lg bg-white p-4 text-black placeholder-gray-500 focus:ring-2 focus:ring-[#a6ff00] focus:outline-none"
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  class="focus:ring-opacity-50 w-full rounded-lg bg-white p-4 text-black placeholder-gray-500 focus:ring-2 focus:ring-[#a6ff00] focus:outline-none"
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  rows="6"
+                  class="focus:ring-opacity-50 w-full resize-none rounded-lg bg-white p-4 text-black placeholder-gray-500 focus:ring-2 focus:ring-[#a6ff00] focus:outline-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full rounded-lg border border-[#a6ff00] bg-[#1c1f26] px-8 py-4 text-lg font-semibold text-white transition duration-300 hover:bg-gray-800"
+              >
+                Contact Us
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END: Contact Us Section -->
+    </main>
+
+    <footer id="footer-placeholder"></footer>
+
+    <script type="module" src="/main.js" defer></script>
+  </body>
 </html>
-
-
