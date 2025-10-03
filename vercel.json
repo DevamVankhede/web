@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/membership",
+      "destination": "/membership.html"
+    },
+    {
+      "source": "/aboutus", 
+      "destination": "/aboutus.html"
+    }
+  ]
+}

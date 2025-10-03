@@ -1,0 +1,8 @@
+# Netlify redirects for SPA routing
+/membership /membership.html 200
+/aboutus /aboutus.html 200
+/membership.html /membership.html 200
+/aboutus.html /aboutus.html 200
+
+# Fallback for any other routes
+/* /index.html 200
