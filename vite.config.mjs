@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   server: {
-    open: "/index.html",
+    open: false,
   },
   build: {
     outDir: "../dist",
-    emptyOutDir: true
+    emptyOutDir: true,
   },
   root: "src",
 });
